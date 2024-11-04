@@ -1,0 +1,19 @@
+import prompt
+
+
+def game_engine(game_rounds, description):
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}')
+    print(description)
+
+    for game_round in game_rounds:
+        (question, answer) = game_round
+        user_answer = prompt.string(f'{question}\n')
+        if user_answer != answer:
+            print(f"'{user_answer}' is wrong answer ;(.Correct answer was '{answer}'.")  # noqa: E501
+            print("Let's try again, Bill!")
+            return
+        print('Correc!')
+
+    print(f'Congratulations, {name}!')
