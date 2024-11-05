@@ -9,7 +9,8 @@ def game_engine(game_rounds, description):
 
     for game_round in game_rounds:
         (question, answer) = game_round
-        user_answer = prompt.string(f'{question}\n')
+        user_answer = prompt.string(f'Question: {question}\n')
+        print(f'Your answer: {user_answer}')
         if user_answer != answer:
             print(f"'{user_answer}' is wrong answer ;(.Correct answer was '{answer}'.")  # noqa: E501
             print("Let's try again, Bill!")
