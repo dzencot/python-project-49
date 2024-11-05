@@ -2,7 +2,7 @@ from brain_games.game_engine import game_engine, ROUNDS_COUNT
 from brain_games.utils import get_random_number
 
 
-DESC = 'Find the greatest common divisor of given numbers.'
+DESC = 'What number is missing in the progression?'
 
 
 def get_progression(start, step, length=10):
