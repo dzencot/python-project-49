@@ -16,7 +16,7 @@ def game_engine(game_rounds, description):
         print(f'Your answer: {user_answer}')
         if user_answer != answer:
             print(f"'{user_answer}' is wrong answer ;(.Correct answer was '{answer}'.")  # noqa: E501
-            print("Let's try again, Bill!")
+            print(f"Let's try again, {name}!")
             return
         print('Correct!')
 
