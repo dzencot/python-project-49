@@ -1,6 +1,9 @@
 import prompt
 
 
+ROUNDS_COUNT = 3
+
+
 def game_engine(game_rounds, description):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -15,6 +18,6 @@ def game_engine(game_rounds, description):
             print(f"'{user_answer}' is wrong answer ;(.Correct answer was '{answer}'.")  # noqa: E501
             print("Let's try again, Bill!")
             return
-        print('Correc!')
+        print('Correct!')
 
     print(f'Congratulations, {name}!')
